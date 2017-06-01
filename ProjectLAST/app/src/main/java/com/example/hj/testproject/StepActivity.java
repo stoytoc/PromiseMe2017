@@ -182,8 +182,7 @@ public class StepActivity extends AppCompatActivity implements OnDataPointListen
         for( final Field field : dataPoint.getDataType().getFields() ) {
             final Value value = dataPoint.getValue( field );
             final String tmpVar = value.toString();
-            final int stepInt = (Integer.parseInt(tmpVar)-21544);
-            //final int stepInt = (Integer.parseInt(tmpVar)-3281);
+            final int stepInt = (Integer.parseInt(tmpVar)); //만보기 스텝수
             //value.setInt(0);
             runOnUiThread(new Runnable() {
                 @Override
